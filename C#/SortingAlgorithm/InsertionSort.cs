@@ -13,9 +13,8 @@ namespace SortingAlgorithm
     /// </summary>
     public class InsertionSort
     {
-        public InsertionSort() { }
 
-        public InsertionSort(int[] data)
+        public static void ForSort(int[] data)
         {
             if (data.Length == 0)
             {
@@ -41,7 +40,7 @@ namespace SortingAlgorithm
             }
         }
 
-        public void InsertionSortWhile(int[] data)
+        public static void WhileSort(int[] data)
         {
             int i = 1;
             while (i < data.Length)

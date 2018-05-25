@@ -9,30 +9,17 @@ using System.Threading.Tasks;
 namespace SortingAlgorithm.Tests
 {
     [TestClass()]
-    public class InsertionSortTests
+    public class MergeSortTests
     {
         [TestMethod()]
-        public void InsertionSortTest()
+        public void SortTest()
         {
             for (int i = 0; i < 100; i++)
             {
                 int[] originData = Util.GenRandomIntArr();
                 int[] sortedData = (int[])originData.Clone();
                 Array.Sort(sortedData);
-                InsertionSort.ForSort(originData);
-                Assert.IsTrue(Util.CompareList(originData, sortedData));
-            }
-        }
-
-        [TestMethod()]
-        public void InsertionSortWhileTest()
-        {
-            for (int i = 0; i < 100; i++)
-            {
-                int[] originData = Util.GenRandomIntArr();
-                int[] sortedData = (int[])originData.Clone();
-                Array.Sort(sortedData);
-                InsertionSort.WhileSort(originData);
+                MergeSort.Sort(originData, 0, originData.Length - 1);
                 Assert.IsTrue(Util.CompareList(originData, sortedData));
             }
         }

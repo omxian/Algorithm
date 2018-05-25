@@ -5,6 +5,13 @@ namespace SortingAlgorithm
 {
     public class Util
     {
+        public static void Swap<T>(T[] arr, int idx1, int idx2)
+        {
+            T temp = arr[idx1];
+            arr[idx1] = arr[idx2];
+            arr[idx2] = temp;
+        }
+
         /// <summary>
         /// string需要另行处理
         /// string是引用型，Equals判断的是引用是否相同
