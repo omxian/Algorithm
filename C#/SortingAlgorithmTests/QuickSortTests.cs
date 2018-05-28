@@ -9,17 +9,17 @@ using System.Threading.Tasks;
 namespace SortingAlgorithm.Tests
 {
     [TestClass()]
-    public class MergeSortTests
+    public class QuickSortTests
     {
         [TestMethod()]
-        public void MergeSortTest()
+        public void QuickSortTest()
         {
             for (int i = 0; i < 100; i++)
             {
                 int[] originData = Util.GenRandomIntArr();
                 int[] sortedData = (int[])originData.Clone();
                 Array.Sort(sortedData);
-                MergeSort.Sort(originData, 0, originData.Length - 1);
+                QuickSort.Sort(originData, 0, originData.Length - 1);
                 Assert.IsTrue(Util.CompareList(originData, sortedData));
             }
         }
