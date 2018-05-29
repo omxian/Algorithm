@@ -32,14 +32,14 @@ namespace SortingAlgorithm
         public static void CocktailSort(int[] arr)
         {
             bool swaped = true;
-            int rightIndex = 0;
-            int leftIndex = arr.Length - 1;
+            int leftIndex = 0;
+            int rightIndex = arr.Length - 1;
 
-            while (swaped && leftIndex > rightIndex)
+            while (swaped && rightIndex > leftIndex)
             {
                 swaped = false;
 
-                for (int j = rightIndex; j < leftIndex ; j++)
+                for (int j = leftIndex; j < rightIndex ; j++)
                 {
                     if (arr[j] > arr[j + 1])
                     {
@@ -47,11 +47,9 @@ namespace SortingAlgorithm
                         swaped = true;
                     }
                 }
+                rightIndex--;
 
-                leftIndex--;
-
-
-                for (int j = leftIndex; j >= rightIndex + 1; j--)
+                for (int j = rightIndex; j > leftIndex; j--)
                 {
                     if (arr[j] < arr[j - 1])
                     {
@@ -59,8 +57,7 @@ namespace SortingAlgorithm
                         swaped = true;
                     }
                 }
-
-                rightIndex++;
+                leftIndex++;
             }
         }
     }
