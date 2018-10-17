@@ -17,7 +17,7 @@ namespace SortingAlgorithm
             {
                 //分区操作
                 int pivotIndex = Partition(arr, startIndex, endIndex);
-                //将其他未排序的排好
+                //二分法思想，将其他未排序的排好
                 Sort(arr, startIndex, pivotIndex - 1);
                 Sort(arr, pivotIndex + 1, endIndex);
             }
@@ -35,11 +35,16 @@ namespace SortingAlgorithm
             //需要比较的值,不同的快排此处可能有所不同
             int pivotVal = arr[endIndex];
 
+            //pivotIndex前面都比pivotVal小，后面都比pivotVal大
             for (int i = startIndex; i < endIndex; i++)
             {
                 if (arr[i] < pivotVal)
                 {
-                    Util.Swap(arr, i, pivotIndex);
+                    //当遇到i == pivotIndex的情况，i和pivotIndex继续++向后走
+                    if (i != pivotIndex)
+                    {
+                        Util.Swap(arr, i, pivotIndex);
+                    }
                     pivotIndex++;
                 }
             }
