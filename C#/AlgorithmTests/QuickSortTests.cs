@@ -1,25 +1,25 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SortingAlgorithm;
+using Algorithm;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SortingAlgorithm.Tests
+namespace Algorithm.Tests
 {
     [TestClass()]
-    public class BucketSortTests
+    public class QuickSortTests
     {
         [TestMethod()]
-        public void BucketSortTest()
+        public void QuickSortTest()
         {
             for (int i = 0; i < 100; i++)
             {
                 int[] originData = Util.GenRandomIntArr();
                 int[] sortedData = (int[])originData.Clone();
                 Array.Sort(sortedData);
-                BucketSort.Sort(originData);
+                QuickSort.Sort(originData, 0, originData.Length - 1);
                 Assert.IsTrue(Util.CompareList(originData, sortedData));
             }
         }

@@ -1,25 +1,25 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SortingAlgorithm;
+using Algorithm;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SortingAlgorithm.Tests
+namespace Algorithm.Tests
 {
     [TestClass()]
-    public class OddEvenSortTests
+    public class SelectionSortTests
     {
         [TestMethod()]
-        public void OddEvenSortTest()
+        public void SelectionSortTest()
         {
             for (int i = 0; i < 100; i++)
             {
                 int[] originData = Util.GenRandomIntArr();
                 int[] sortedData = (int[])originData.Clone();
                 Array.Sort(sortedData);
-                OddEvenSort.Sort(originData);
+                SelectionSort.Sort(originData);
                 Assert.IsTrue(Util.CompareList(originData, sortedData));
             }
         }

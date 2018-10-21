@@ -7,8 +7,8 @@
     <ProjectGuid>{40112585-20BD-4208-8224-FCC37507DE41}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SortingAlgorithm</RootNamespace>
-    <AssemblyName>SortingAlgorithm</AssemblyName>
+    <RootNamespace>Algorithm</RootNamespace>
+    <AssemblyName>Algorithm</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -1,12 +1,12 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SortingAlgorithm;
+using Algorithm;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SortingAlgorithm.Tests
+namespace Algorithm.Tests
 {
     [TestClass()]
     public class MergeSortTests

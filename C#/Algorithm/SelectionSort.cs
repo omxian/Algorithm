@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SortingAlgorithm
+namespace Algorithm
 {
     /// <summary>
     /// 选择排序，每次循环找出最大/最小的值放置到相应位置

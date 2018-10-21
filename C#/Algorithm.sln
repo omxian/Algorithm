@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgorithm", "SortingAlgorithm\SortingAlgorithm.csproj", "{40112585-20BD-4208-8224-FCC37507DE41}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm", "Algorithm\Algorithm.csproj", "{40112585-20BD-4208-8224-FCC37507DE41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgorithmTests", "SortingAlgorithmTests\SortingAlgorithmTests.csproj", "{94A86996-0FF1-44C7-A256-9AF94DE05673}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorithmTests", "AlgorithmTests\AlgorithmTests.csproj", "{94A86996-0FF1-44C7-A256-9AF94DE05673}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

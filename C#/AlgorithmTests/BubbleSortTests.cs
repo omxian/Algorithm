@@ -1,38 +1,38 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SortingAlgorithm;
+using Algorithm;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SortingAlgorithm.Tests
+namespace Algorithm.Tests
 {
     [TestClass()]
-    public class InsertionSortTests
+    public class BubbleSortTests
     {
         [TestMethod()]
-        public void InsertionSortTest()
+        public void BubbleSortTest()
         {
             for (int i = 0; i < 100; i++)
             {
                 int[] originData = Util.GenRandomIntArr();
                 int[] sortedData = (int[])originData.Clone();
                 Array.Sort(sortedData);
-                InsertionSort.ForSort(originData);
+                BubbleSort.Sort(originData);
                 Assert.IsTrue(Util.CompareList(originData, sortedData));
             }
         }
 
         [TestMethod()]
-        public void InsertionSortWhileTest()
+        public void CocktailSortTest()
         {
             for (int i = 0; i < 100; i++)
             {
                 int[] originData = Util.GenRandomIntArr();
                 int[] sortedData = (int[])originData.Clone();
                 Array.Sort(sortedData);
-                InsertionSort.WhileSort(originData);
+                BubbleSort.CocktailSort(originData);
                 Assert.IsTrue(Util.CompareList(originData, sortedData));
             }
         }

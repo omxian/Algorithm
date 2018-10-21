@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SortingAlgorithm
+namespace Algorithm
 {
     public class Util
     {
