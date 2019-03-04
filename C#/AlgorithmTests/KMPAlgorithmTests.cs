@@ -12,13 +12,6 @@ namespace Algorithm.Tests
     public class KMPAlgorithmTests
     {
         [TestMethod()]
-        public void GetNextTest()
-        {
-            KMPAlgorithm kmp = new KMPAlgorithm();
-            Assert.IsTrue(Util.CompareList(kmp.GetNext("abababca"), new List<int> { -1, 0, 0, 1, 2, 3, 4, 0 }));
-        }
-
-        [TestMethod()]
         public void KMPTest()
         {
             KMPAlgorithm kmp = new KMPAlgorithm();
@@ -29,6 +22,7 @@ namespace Algorithm.Tests
             Assert.AreEqual("ababsssaababc".IndexOf("sssa"), kmp.KMP("ababsssaababc", "sssa"));
             Assert.AreEqual("a".IndexOf("b"), kmp.KMP("a", "b"));
             Assert.AreEqual("a".IndexOf("a"), kmp.KMP("a", "a"));
+            Assert.AreEqual("aaab".IndexOf("aab"), kmp.KMP("aaab", "aab"));
         }
     }
 }
