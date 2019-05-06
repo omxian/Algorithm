@@ -1,6 +1,6 @@
 --欧几里德算法，求最大公因子
 local function EuclideanAlgorithm(n,m)
-  r = n%m
+  local r = n%m
   if(r == 0) then
     return m
   else
